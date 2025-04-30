@@ -16,4 +16,4 @@ export const routes: Routes = [
   { path: '', redirectTo: '/productos', pathMatch: 'full' }
 ];
 
-export const appRoutes = [provideRouter(routes, withHashLocation())]; // Exporta la configuración del router con Hash Location
+export const appRoutes = [provideRouter(routes, withHashLocation())];
