@@ -1,0 +1,52 @@
+.contacto-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+  }
+  
+  .redes-sociales a {
+    margin: 0 10px;
+    color: #333;
+    font-size: 2rem;
+    transition: color 0.3s ease;
+  }
+  
+  .redes-sociales a:hover {
+    color: #3743b6;
+  }
+  
+  .formulario-contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .formulario-contacto input,
+  .formulario-contacto textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .formulario-contacto button {
+    background-color: #1b215a;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .formulario-contacto button:hover {
+    background-color: #3743b6;
+  }
+  
+  .informacion-adicional {
+    margin-top: 30px;
+    font-size: 1.1rem;
+  }
+  
+
+  

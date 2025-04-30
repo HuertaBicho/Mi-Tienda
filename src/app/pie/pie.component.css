@@ -1,0 +1,47 @@
+/* Estilos generales del pie de página */
+.footer {
+    background-color: #ffffff;  /* Fondo oscuro */
+    color: rgba(255, 255, 255, 0);  /* Texto blanco */
+    padding: 20px 0;
+    text-align: center;
+    font-size: 0.9em;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+  }
+  
+  .footer-links {
+    margin-bottom: 15px;
+  }
+  
+  .footer-links a {
+    color: rgb(0, 0, 0);  
+    text-decoration: none;
+    margin: 0 15px;
+    transition: color 0.3s;
+  }
+  
+  .footer-links a:hover {
+    color: #1b215a;  
+  }
+  
+  .footer-bottom {
+    margin-top: 20px;
+    font-size: 0.8em;
+    color: #000000;  /* Texto más claro para el copyright */
+  }
+  
+  /* Para que se vea bien en móviles, añadir algo de margen */
+  @media (max-width: 768px) {
+    .footer-links a {
+      display: block;
+      margin: 5px 0;
+    }
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+  

@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');/*fuente para el componente acerca-de*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+router-outlet + * {
+    display: block; /* Asegura que el contenido no se duplique visualmente */
+  }
+
+  body {
+    font-family: 'Poppins', sans-serif;
+  }
+  

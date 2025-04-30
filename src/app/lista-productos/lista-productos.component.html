@@ -1,0 +1,19 @@
+<div class="productos">
+  <ul>
+    <li *ngFor="let item of items">
+      <img class="imagen" [src]="item.image" [alt]="item.title">
+      <span class="nombre">{{ item.title }}</span>
+      <span class="tipo">{{ item.category }}</span>
+      <span class="precio">{{ item.price | currency }}</span>
+      
+      <!-- Botón de añadir al carrito pequeño con ícono -->
+      <button class="boton-agregar" (click)="agregarAlCarrito(item)">
+        <i class="fas fa-shopping-cart"></i> <!-- Icono de carrito -->
+      </button>
+    </li>
+  </ul>
+
+  <p *ngIf="items.length === 0">Cargando productos...</p>
+</div>
+
+

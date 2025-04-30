@@ -1,0 +1,45 @@
+<div class="carrito-container">
+  <h2>Tu carrito</h2>
+
+  <div *ngFor="let item of itemsCarrito$ | async; trackBy: trackById" class="carrito-item">
+    <img [src]="item.image" [alt]="item.title" />
+    <div class="carrito-info">
+      <h4>{{ item.title }}</h4>
+      <p>{{ item.price | currency }}</p>
+    </div>
+    <div class="carrito-actions">
+      <input type="number" [(ngModel)]="item.quantity" (change)="actualizarCantidad(item.id, item.quantity)" min="1" />
+      <button (click)="eliminarItem(item.id)">Eliminar</button>
+    </div>
+  </div>
+
+  <div class="carrito-total">
+    Total: {{ total | currency }}
+  </div>
+
+  <button class="boton-comprar" (click)="finalizarCompra()">Comprar</button>
+  
+  <div *ngIf="compraRealizada" class="ticket-compra">
+    <div class="ticket-header">
+      <h3>GAP</h3>
+      <p>{{ fechaActual | date: 'dd/MM/yyyy HH:mm' }}</p>
+      <p>Gracias por tu compra 🎉</p>
+    </div>
+  
+    <ul class="ticket-items">
+      <li *ngFor="let item of ticket">
+        <span>{{ item.title }} x{{ item.quantity }}</span>
+        <span>{{ item.price | currency }}</span>
+      </li>
+    </ul>
+  
+    <div class="ticket-total">
+      Total pagado: {{ totalTicket | currency }}
+    </div>
+  
+    <div class="ticket-thanks">
+      ¡Esperamos verte pronto!
+    </div>
+  </div>
+  
+</div>
